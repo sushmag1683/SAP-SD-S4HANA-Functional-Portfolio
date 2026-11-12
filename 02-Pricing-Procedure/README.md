@@ -62,3 +62,40 @@ Validate pricing determination in a sales order and document the expected and ac
 ## 8. Key Learning Outcomes
 
 Summarize how condition techniques determine prices, discounts and surcharges in SAP SD.
+
+
+## 9. Practical Configuration Example
+
+The following custom condition types were practised in the SAP S/4HANA practice environment.
+
+| Condition Type | Description | Purpose |
+|---|---|---|
+| ZPR0 | Z Base Price | Defines the base selling price |
+| ZD01 | Z Percentage Discount | Applies percentage-based discounts |
+| ZD02 | Z Absolute Discount | Applies fixed-value discounts |
+| ZFRA | Z Freight Surcharge | Adds freight charges |
+
+## 10. Pricing Procedure Determination
+
+Pricing procedure determination depends on:
+
+- Sales Area
+- Document Pricing Procedure
+- Customer Pricing Procedure
+
+Transaction Code: OVKK
+
+## 11. Testing and Validation
+
+- Created condition records using VK11.
+- Tested pricing determination in sales orders.
+- Verified base price, discounts and freight conditions.
+- Checked the determined pricing procedure.
+
+## 12. Key Learning Outcomes
+
+- Understood the condition technique in SAP SD.
+- Practised creating custom condition types.
+- Learned pricing procedure determination.
+- Validated pricing conditions in sales documents.
+
