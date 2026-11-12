@@ -1,64 +1,64 @@
 
-# SAP S/4HANA – Enterprise Structure Configuration
+# SAP S/4HANA – Pricing Procedure Configuration
 
 ## 1. Objective
-To understand the organizational structure of SAP S/4HANA and its role in supporting Sales and Distribution (SD) business processes.
+To understand the pricing determination process in SAP Sales and Distribution (SD).
 
-## 2. Organizational Units
+## 2. Pricing Components
 
-| Organizational Unit | Description |
-|---|---|
-| Company Code | Represents an independent legal accounting entity |
-| Sales Organization | Responsible for sales and distribution activities |
-| Distribution Channel | Defines how products reach customers |
-| Division | Represents a grouping of products or services |
-| Plant | Organizational unit where materials are produced or stored |
-| Storage Location | Identifies a specific storage area within a plant |
-| Shipping Point | Organizational unit responsible for shipping deliveries |
+- Condition Tables
+- Access Sequences
+- Condition Types
+- Pricing Procedures
+- Condition Records
+- Pricing Procedure Determination
 
-## 3. Configuration Activities
-
-- Define Company Code.
-- Define Sales Organization.
-- Define Distribution Channel.
-- Define Division.
-- Define Plant.
-- Define Storage Location.
-- Define Shipping Point.
-- Assign organizational units according to SAP enterprise structure requirements.
-
-## 4. Important Transaction Codes
+## 3. Important Transaction Codes
 
 | T-Code | Purpose |
 |---|---|
-| OX02 | Define Company Code |
-| OVX5 | Define Sales Organization |
-| OVXI | Define Distribution Channel |
-| OVXB | Define Division |
-| OX10 | Define Plant |
-| OVL2 | Shipping Point Determination |
+| V/03 | Define Condition Tables |
+| V/06 | Define Condition Types |
+| V/07 | Define Access Sequences |
+| V/08 | Define Pricing Procedures |
+| OVKK | Determine Pricing Procedure |
+| VK11 | Create Condition Records |
+| VK12 | Change Condition Records |
+| VK13 | Display Condition Records |
 
-## 5. IMG Configuration Path
+## 4. Condition Types
 
-SPRO → SAP Reference IMG → Enterprise Structure
+| Condition Type | Description |
+|---|---|
+| PR00 | Standard Base Price |
+| K005 | Customer Discount |
+| ZPR0 | Custom Base Price |
+| ZD01 | Percentage Discount |
+| ZD02 | Absolute Discount |
+| ZFRA | Freight Surcharge |
 
-Configuration and assignment activities are available under the Definition and Assignment sections.
+## 5. Pricing Procedure Configuration
 
-## 6. Integration with SAP SD
+Document the following:
+- Creation of condition types
+- Assignment of access sequences
+- Pricing procedure maintenance
+- Step and counter configuration
+- Pricing procedure determination
+- Condition record maintenance
 
-Enterprise structure supports:
-- Sales document processing.
-- Delivery processing.
-- Shipping point determination.
-- Billing and sales transactions.
+## 6. Pricing Scales
 
-## 7. Practical Learning
+Document practical examples of:
+- Base price scales
+- Percentage discount scales
+- Absolute discount scales
+- Freight surcharge scales
 
-Practised creating and assigning enterprise structure components in an SAP S/4HANA practice environment.
+## 7. Testing
+
+Validate pricing determination in a sales order and document the expected and actual condition values.
 
 ## 8. Key Learning Outcomes
 
-- Understood the relationship between organizational units.
-- Learned how enterprise structure supports SAP SD processes.
-- Practised organizational unit configuration and assignments.
-
+Summarize how condition techniques determine prices, discounts and surcharges in SAP SD.
